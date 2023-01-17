@@ -1,5 +1,6 @@
 package Orcamento;
 
+import Orcamento.situacao.Aprovado;
 import Orcamento.situacao.EmAnalise;
 import Orcamento.situacao.SituacaoOrcamento;
 
@@ -48,5 +49,14 @@ public class Orcamento {
 
     public void setSituacao(SituacaoOrcamento situacao) {
         this.situacao = situacao;
+    }
+
+    @Override
+    public String toString() {
+        return "Orcamento{" +
+                "valor=" + valor +
+                ", quantidadeItem=" + quantidadeItem +
+                ", situacao=" + situacao +
+                '}';
     }
 }
